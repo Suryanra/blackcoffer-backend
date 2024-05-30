@@ -13,7 +13,6 @@ app.use(cors({
 
 app.get('/',async(req,resp)=>{
       const data=await BlackCofferModel.find({});
-      console.log(data);
 resp.send(data);
 })
 
